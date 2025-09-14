@@ -1,17 +1,14 @@
 Project Overview
 
-🎯 Project Name
+Project Name
 
 Financial World Quest
 
-🚀 Summary
+Summary
 
 A gamified web app for financial literacy in South Africa, featuring an Augmented Reality (AR) camera scan to initiate quests, 30-question quizzes with trophies, a trained ML financial advisor (scikit-learn), and budgeting tools. Built for the Financial Solution category.
 
-✨ Key Features
-
-
-
+Key Features
 
 
 AR Camera Scan: Engages users by scanning their environment to start financial quests, leveraging AR for immersive learning.
@@ -32,22 +29,17 @@ Budget optimizer with XP and badges.
 
 Digital human video (toggle full-screen, audio).
 
-💡 Inspiration
+Inspiration
 
 Inspired by the need for engaging financial education, using AR to make learning interactive and stokvels for cultural relevance.
 
-📌 Future Improvements
-
-
-
-
+Future Improvements
 
 Enhance AR with 3D financial visualizations.
-
 
 
 Fine-tune larger LLM (e.g., via RunPod GPU).
 
 
 
-Add multiplayer quizzes and stokvel API.
+Add multiplayer quizzes and Use Better GPU TO HANDLE MULTIPLE WORKERS AT THE SAME TIME.

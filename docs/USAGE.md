@@ -46,15 +46,13 @@ Click digital human video to expand (sound on, loops); click to shrink (muted).
 
 
 
-Demo Video: [https://drive.google.com/file/d/1_s1sWinr5IyWZC7NI6yaPYe5KtDXo7Ux/view?usp=sharing]
+Demo Video: demo/Demo Video  Or [https://drive.google.com/file/d/1_s1sWinr5IyWZC7NI6yaPYe5KtDXo7Ux/view?usp=sharing]
 
 
 
-PowerPoint: demo/demo.pptx
+PowerPoint: demo/Presentation.pptx
 
-📌 Notes
-
-
+Notes
 
 
 
