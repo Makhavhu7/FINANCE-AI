@@ -1,23 +1,31 @@
-# Use an official base image (you should change this to your appropriate language/runtime)
+#Use an official base image
+
 FROM ubuntu:22.04
 
-# Install dependencies (example: Python, Node, C++ compilers, etc.)
-RUN apt-get update && apt-get install -y python3 python3-pip gcc nodejs npm
+#Install system dependencies
 
-# Set working directory
+RUN apt-get update && apt-get install -y 
+#python3 
+#python3-pip 
+#gcc 
+#&& rm -rf /var/lib/apt/lists/*
+
+#Set working directory
+
 WORKDIR /app
 
-# Copy project files
-COPY . .
+#Copy only necessary files
 
-# Expose the port the app runs on (If required)
-# EXPOSE 3000
+COPY requirements.txt . COPY src/ src/ COPY assets/ assets/ COPY demo/ demo/ COPY docs/ docs/
 
-# Example: Install Node.js deps
-# RUN npm install
+#Install Python dependencies
 
-# Example: Install Python deps
-# RUN pip install -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
-# Default command (you should change this)
-CMD ["echo", "Hello from Docker! Customize me in Dockerfile."]
+#Expose the port the app runs on
+
+EXPOSE 8000
+
+#Default command to run the FastAPI app
+
+CMD ["uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "8000"]
